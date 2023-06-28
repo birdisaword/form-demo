@@ -19,13 +19,13 @@ export const login = (email: string, password: string): AppThunk => async (dispa
 
     const { accessToken, refreshToken } = response.data;
 
-    // Store tokens in local storage or secure storage
     localStorage.setItem('accessToken', accessToken);
     localStorage.setItem('refreshToken', refreshToken);
 
     dispatch(setLoggedIn(true));
   } catch (error) {
-    // Handle error
+    console.log(error);
+    
   }
 };
 

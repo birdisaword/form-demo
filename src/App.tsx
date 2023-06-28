@@ -1,25 +1,21 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import { Provider } from 'react-redux';
+import { store } from './store/store';
+import { Navigate } from 'react-router-dom';
 import Auth from './pages/Auth';
 import Home from './pages/Home';
-import { store } from './store/store';
 
 const Root = () => (
-  <Provider store={store}>
-    <Router>
+  <HashRouter>
+    <Provider store={store}>
       <Routes>
-        <Route
-          path="/"
-          element={
-            <Navigate to="/auth/login" replace={true} />
-          }
-        />
+        <Route path="/" element={<Navigate to="/auth/login" replace />} />
         <Route path="/auth/*" element={<Auth />} />
         <Route path="/home" element={<Home />} />
       </Routes>
-    </Router>
-  </Provider>
+    </Provider>
+  </HashRouter>
 );
 
 export default Root;

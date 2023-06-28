@@ -1,10 +1,10 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Div, MainTitle, ExtraTitle, SignOutBtn, BodyContainer, PeopleImg, BtnText } from '../style';
 import Logo from '../components/Logo';
 import people from '../assets/people.png';
 
-const Home: React.FC = () => {
+const Home = () => {
   const navigate = useNavigate();
 
   // useEffect(() => {
@@ -12,6 +12,7 @@ const Home: React.FC = () => {
 
   //   if (!accessToken) {
   //     navigate('/auth/login');
+  //     console.log('no access token');
   //   }
   // }, [navigate]);
 
@@ -22,14 +23,18 @@ const Home: React.FC = () => {
 
   return (
     <Div>
-      <Logo/>
-        <BodyContainer>
-          <MainTitle>CONGRATULATIONS</MainTitle>
-          <ExtraTitle>Now you are on the main page. Soon we will provide you with detailed feedback on the result of your work</ExtraTitle>
-          <SignOutBtn onClick={handleSignOut}><BtnText>Log out</BtnText></SignOutBtn>
-          <PeopleImg src={people} alt="People" />
-        </BodyContainer>
-   </Div>
+      <Logo />
+      <BodyContainer>
+        <MainTitle>CONGRATULATIONS</MainTitle>
+        <ExtraTitle>
+          Now you are on the main page. Soon we will provide you with detailed feedback on the result of your work
+        </ExtraTitle>
+        <SignOutBtn onClick={handleSignOut}>
+          <BtnText>Log out</BtnText>
+        </SignOutBtn>
+        <PeopleImg src={people} alt="People" />
+      </BodyContainer>
+    </Div>
   );
 };
 
