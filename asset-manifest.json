@@ -1,20 +1,22 @@
 {
   "files": {
-    "main.css": "/form-demo/static/css/main.8da8d512.css",
-    "main.js": "/form-demo/static/js/main.43ec26f0.js",
+    "main.css": "/form-demo/static/css/main.a7a26ed1.css",
+    "main.js": "/form-demo/static/js/main.42ca4bce.js",
     "static/js/787.0d631dc5.chunk.js": "/form-demo/static/js/787.0d631dc5.chunk.js",
     "static/media/Montserrat-SemiBold.ttf": "/form-demo/static/media/Montserrat-SemiBold.d5e0cc788cba9ced1fb9.ttf",
     "static/media/Montserrat-Bold.ttf": "/form-demo/static/media/Montserrat-Bold.2c155811b35513d5beaa.ttf",
     "static/media/Montserrat-Regular.ttf": "/form-demo/static/media/Montserrat-Regular.ceb11275ab638627a643.ttf",
+    "static/media/Montserrat-ExtraLight.ttf": "/form-demo/static/media/Montserrat-ExtraLight.ef3c777f702c89a0f300.ttf",
+    "static/media/Montserrat-Thin.ttf": "/form-demo/static/media/Montserrat-Thin.413b6b9f23ece3b343a7.ttf",
     "static/media/people.png": "/form-demo/static/media/people.0e5de50e5a8143a209be.png",
     "static/media/sparks.png": "/form-demo/static/media/sparks.1c6ea96ba00a694fb221.png",
     "index.html": "/form-demo/index.html",
-    "main.8da8d512.css.map": "/form-demo/static/css/main.8da8d512.css.map",
-    "main.43ec26f0.js.map": "/form-demo/static/js/main.43ec26f0.js.map",
+    "main.a7a26ed1.css.map": "/form-demo/static/css/main.a7a26ed1.css.map",
+    "main.42ca4bce.js.map": "/form-demo/static/js/main.42ca4bce.js.map",
     "787.0d631dc5.chunk.js.map": "/form-demo/static/js/787.0d631dc5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8da8d512.css",
-    "static/js/main.43ec26f0.js"
+    "static/css/main.a7a26ed1.css",
+    "static/js/main.42ca4bce.js"
   ]
 }
